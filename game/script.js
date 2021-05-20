@@ -1,14 +1,15 @@
 /*
 - Chinese Soft Shell Turtles Urinate From Their Mouths
-- Written by William Winters in 2020 AD
+- Written by William Winters in 2021 AD
 - This work, such as it is, is in the Public Domain
-- Attribution would be appreciated
+- Attribution would be appreciated, if for some reason this is worth using as a prior work
 */
 
 
 //======================setup canvas==================================
 
 var canvas = document.getElementById("Canvas");
+var div = document.getElementById("canvasDiv")
 //canvas.width = window.innerWidth - window.innerWidth/16;
 //canvas.height = 450;//window.innerHeight;
 var cntxt = canvas.getContext('2d');
@@ -340,9 +341,10 @@ turtlePic.src = "images/Chinese-Softshell-Turtle-Sprite.png";
 var targetPic = new Image();
 targetPic.src = "images/Mush.png";
 
+//helps make background pattern
 var test = new Image();
 test.src = "images/tile-test4.png";
-var pat = "pink";
+var pat = "pink"; 
 pat = cntxt.createPattern(test,"repeat");
 
 //===============construct objects====================
